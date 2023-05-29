@@ -19,9 +19,9 @@ export default async function Page({params}) {
   const vehiculo = await getVehiculo(params.vehiculo);
   
   return (
-    <div className='my-4 pb-2 rounded-lg shadow h-[20rem] w-60 mx-auto'>
+    <div className='my-4 pb-4 rounded-lg shadow h-[24rem] w-80 mx-auto'>
       <div className=''>
-        <Image src = {`/imagenes/vehiculos/${vehiculo.tipo.imagen}`} alt = '' height = {100} width = {180} className='rounded-t-lg object-fill w-60'/>
+        <Image src = {`/imagenes/vehiculos/${vehiculo.tipo.imagen}`} alt = '' height = {100} width = {180} className='rounded-t-lg object-fill w-80'/>
         <div className='flex flex-col justify-between mb-2'>
           <div className="text-center p-1 text-gray-800 truncate">{vehiculo.num_uic}</div>
           <div className="text-center text-base text-gray-500 truncate">{vehiculo.keeper}</div>
