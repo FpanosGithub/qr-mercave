@@ -2,6 +2,7 @@
 import { Map, ZoomControl, Marker, Overlay } from "pigeon-maps";
 import { stamenToner } from 'pigeon-maps/providers';
 
+
 export default function MapaCirculaciones ({circulaciones, select, onSelect, hover, onHover}) {
   
   const checkDate = (date) => {
